@@ -63,27 +63,31 @@ public static void AssemblyInit(TestContext context)
 
 ## FAQ ##
 
-### Why not just use a localDb or SqlExpress? ### 
+### Why not just use a localDb or SqlExpress?
 
 The data can get corrupt over many failing test runs. Ideally you'd be deleting/truncating tables and re-seeding them each time.
 With a temporary database file, it's a clean slate every time.
 When you use Entity Framework, you are can test your migrations every test run (see AssemblyInit code above). 
 You probably still want to delete from specific tables between each test, depending on your application.
 
-### Can I use NUnit or XUnit instead of MsTest? ### 
+### Can I use NUnit or XUnit instead of MsTest?
 
 In NUnit, put the initialization in [SetUpFixture]. 
 In XUnit, you'll need a ICollectionFixture, and beware of concurrency issues.
 
-### Can I run it in every test, so each test has a separate database? ### 
+### Can I run it in every test, so each test has a separate database?
 
 If you use Entity Framework, no, because the dbContext is created once per AppDomain.
 Otherwise, yes, but it'll be slow (you'll be running your DDL each time).
 
-### Integration tests are fragile! ### 
+### Integration tests are fragile!
 
 Yes, they are, and your tests may fail occasionally. The biggest problem is opening the temporary database in Visual Studio/ SSMS, so it can't be deleted when the the test next runs.
- 
-### Finding out what went wrong? ### 
+
+### It errors because I have no (LocalDB)\MSSQLLocalDB
+
+You haven't got SqlServer Express 14 installed. You can change it (with options, see above) so it points to SqlExpress (DataSource = @".\SqlExpress") or localDb v11 (DataSource = @"(LocalDB)\v11.0")
+
+### Finding out what went wrong?
 
 Some errors are written to Console standard output.
