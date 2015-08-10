@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CreateTestDatabase")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Create a temporary database (localDb/SqlExpress) for testing")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Martin Willey")]
 [assembly: AssemblyProduct("CreateTestDatabase")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
