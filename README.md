@@ -2,6 +2,10 @@
 
 This is a small utility to create temporary databases (in SqlServer localDb or SqlExpress) for **integration tests**.
 
+Nuget: Install-Package CreateTestDatabase [![Nuget](https://img.shields.io/nuget/v/CreateTestDatabase.svg) ](https://www.nuget.org/packages/CreateTestDatabase/)
+
+[![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/github/martinjw/CreateTestDatabase?svg=true)](https://ci.appveyor.com/project/martinjw/CreateTestDatabase)
+
 ## MsTest ##
 
 You can also use NUnit, XUnit or any other testing framework.
