@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>CreateTestDatabase</id>
     <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <title>CreateTestDatabase</title>
+	<authors>Martin Willey</authors>
+	<owners>Martin Willey</owners>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/martinjw/CreateTestDatabase</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Create a temporary database (localDb/SqlExpress) for testing e.g. [AssemblyInitialize] TestDatabase.Create(connectionStringName);</description>
     <releaseNotes>Initial version.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>localDb SqlExpress Testing CodeFirst</tags>
