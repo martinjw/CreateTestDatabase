@@ -1,0 +1,1 @@
+%systemroot%\Microsoft.Net\Framework\v4.0.30319\MSBuild.exe build.proj /fl /flp:Verbosity=normal & pause

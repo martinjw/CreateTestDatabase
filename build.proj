@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+	<Target Name="Build">
+		<!-- 4.5.2 -->
+		<MSBuild Projects="CreateTestDatabase\CreateTestDatabase.csproj" Properties="Configuration=Release" Targets="Build" />
+		<!-- 4.5 -->
+		<MSBuild Projects="CreateTestDatabase\CreateTestDatabase.csproj" Properties="Configuration=Release45" Targets="Build" />
+		<!-- 4.0 -->
+		<MSBuild Projects="CreateTestDatabase\CreateTestDatabase.csproj" Properties="Configuration=Release40" Targets="Build" />
+		<!-- 4.6 tbc -->
+	</Target>
+</Project>

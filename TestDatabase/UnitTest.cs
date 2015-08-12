@@ -44,7 +44,7 @@ namespace TestDatabase
             //if you've already done this with AssemblyInitialize, EF has been initialized and the connection string is different
 
             //NB: this isn't the connection string in app.config
-            var connectionString = ConfigurationManager.ConnectionStrings["TestDbContext"].ConnectionString;
+            var connectionString = ConfigurationManager.ConnectionStrings["ProductContext"].ConnectionString;
 
             using (var con = new SqlConnection(connectionString))
             {

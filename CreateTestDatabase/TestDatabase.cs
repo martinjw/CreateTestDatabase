@@ -6,6 +6,9 @@ using System.IO;
 
 namespace CreateTestDatabase
 {
+    /// <summary>
+    /// Create a temporary test database. Either use static <see cref="Create"/>, or create an instance and call <see cref="CreateDatabase"/> followed by <see cref="InitConnectionString"/>
+    /// </summary>
     public class TestDatabase
     {
         private readonly TestDatabaseOptions _testDatabaseOptions;

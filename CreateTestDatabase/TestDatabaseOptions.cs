@@ -4,8 +4,16 @@ using System.Reflection;
 
 namespace CreateTestDatabase
 {
+    /// <summary>
+    /// Options for creating <see cref="TestDatabase"/>
+    /// </summary>
     public class TestDatabaseOptions
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TestDatabaseOptions"/> class.
+        /// </summary>
+        /// <param name="connectionStringName">Name of the connection string.</param>
+        /// <exception cref="ArgumentNullException">connectionStringName</exception>
         public TestDatabaseOptions(string connectionStringName)
         {
             if (connectionStringName == null) throw new ArgumentNullException("connectionStringName");
